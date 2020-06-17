@@ -9,7 +9,6 @@ import 'repositories/trip_repository.dart';
 final sl = GetIt.instance;
 
 Future<void> init() async {
-  //! Features - Number Trivia
   // Bloc
   sl.registerFactory(
     () => TripBloc(sl()),
