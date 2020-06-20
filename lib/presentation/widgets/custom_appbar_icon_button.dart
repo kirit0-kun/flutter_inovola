@@ -13,12 +13,9 @@ class CustomAppbarIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.transparent,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(24.0),
-      ),
-      child: InkWell(
-        splashColor: Colors.white12,
+      type: MaterialType.transparency,
+      shape: CircleBorder(),
+      child: InkResponse(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Icon(

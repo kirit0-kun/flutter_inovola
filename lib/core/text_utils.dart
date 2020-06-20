@@ -14,6 +14,12 @@ extension DateParsing on String {
   }
 
   String simplifyAmPm() {
-    return this.replaceFirst(' م', ' مساءاً').replaceFirst(' ص', ' صباحاً');
+    final march = 'مارس';
+    final marchPlaceHolder = 'placeholder';
+    return this
+        .replaceAll(march, marchPlaceHolder)
+        .replaceFirst(' م', ' مساءاً')
+        .replaceFirst(' ص', ' صباحاً')
+        .replaceAll(marchPlaceHolder, march);
   }
 }

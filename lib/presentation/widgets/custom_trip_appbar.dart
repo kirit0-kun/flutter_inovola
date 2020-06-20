@@ -51,10 +51,10 @@ class _CustomAppbarState extends State<CustomAppbar> {
       duration: Duration(milliseconds: 200),
       builder: (BuildContext context, Color color, child) {
         SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-          systemNavigationBarColor: backColor, // navigation bar color
-          statusBarColor: color, // status bar color
+          systemNavigationBarColor: backColor,
+          statusBarColor: color,
         ));
-        return Container(
+        return Ink(
           color: color,
           height: AppBar().preferredSize.height,
           child: child,
